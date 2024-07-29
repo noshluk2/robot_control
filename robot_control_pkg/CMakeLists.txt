@@ -22,11 +22,18 @@ find_package(tf2_ros REQUIRED)
 
 
 
-add_executable(drive_node src/drive_node.cpp)
-ament_target_dependencies(drive_node rclcpp std_msgs geometry_msgs)
+# add_executable(drive_node src/drive_node.cpp)
+# ament_target_dependencies(drive_node rclcpp std_msgs geometry_msgs)
+
+
+
+add_executable(spiral_motion src/spiral_motion.cpp)
+ament_target_dependencies(spiral_motion rclcpp std_msgs geometry_msgs)
+
 
 install(TARGETS
-  drive_node
+spiral_motion
+  # drive_node
   DESTINATION lib/${PROJECT_NAME})
 
   install(DIRECTORY launch
