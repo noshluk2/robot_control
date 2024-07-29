@@ -11,7 +11,7 @@ def generate_launch_description():
 
     turtle_driver_node= Node(
         package ='robot_control_pkg',
-        executable = 'drive_node',
+        executable = 'spiral_motion',
         name = 'turtle_driver',
     )
 
