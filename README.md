@@ -18,6 +18,6 @@ Repository Contains 2d and 3D ros simulations. Submodule is also added
 - Run Bash Script , allow executive permissino to bash script
     ```
     chmod +x robot_control/packages_setup.sh
-    ./packages_setup.sh
+    bash robot_control/packages_setup.sh
     ```
 -
